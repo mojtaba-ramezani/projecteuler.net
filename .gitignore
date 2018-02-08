@@ -1,0 +1,5 @@
+# ides and editors:
+/.idea
+
+# compiled output:
+*.class
