@@ -9,11 +9,11 @@ public class problem3 {
         long largest = 0;
         System.out.println("Please enter a number:");
         try {
-            num = Integer.parseInt(reader.readLine());
+            num = Long.parseLong(reader.readLine());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for(long i = 1; i < num; i++)
+        for(long i = 3; i * i < num; i += 2)
             if (num % i == 0 && isPrime(i)) largest = i;
 
         System.out.println("the largest prime factor of the " + num + " is: " + largest);
