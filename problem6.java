@@ -13,7 +13,7 @@ public class problem6 {
             e.printStackTrace();
         }
         int sumOfSquares = 0, squareOfSum = 0, sumOfNum = 0, difference;
-        for(int i = 1; i <= num; i++) {
+        for (int i = 1; i <= num; i++) {
             sumOfSquares += i * i;
             sumOfNum += i;
         }

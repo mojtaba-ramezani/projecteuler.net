@@ -18,9 +18,10 @@ public class problem5 {
         }
         System.out.println(num);
     }
+
     public static boolean isDivisible(int n, int limit) {
-        for(int i = 2; i < limit; i++) {
-            if(n % i != 0) {
+        for (int i = 2; i < limit; i++) {
+            if (n % i != 0) {
                 return false;
             }
         }

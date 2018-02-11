@@ -14,21 +14,22 @@ public class problem4 {
             e.printStackTrace();
         }
         n = Math.pow(10, num);
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 product = i * j;
-                if(isSymmetric(product) && product > largest) largest = product;
+                if (isSymmetric(product) && product > largest) largest = product;
             }
         }
         System.out.println(largest);
     }
+
     public static boolean isSymmetric(int n) {
         int i = 0, j = n;
-        while(j > 0) {
+        while (j > 0) {
             i = (i * 10) + (j % 10);
             j /= 10;
         }
-        if(i == n) return true;
+        if (i == n) return true;
         else return false;
     }
 }

@@ -13,15 +13,16 @@ public class problem3 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for(long i = 3; i * i < num; i += 2)
+        for (long i = 3; i * i < num; i += 2)
             if (num % i == 0 && isPrime(i)) largest = i;
 
         System.out.println("the largest prime factor of the " + num + " is: " + largest);
     }
+
     public static boolean isPrime(long n) {
-        if(n % 2 == 0) return false;
-        for(long i = 3; i * i < n; i += 2)
-            if(n % i == 0) return false;
+        if (n % 2 == 0) return false;
+        for (long i = 3; i * i <= n; i += 2)
+            if (n % i == 0) return false;
 
         return true;
     }
